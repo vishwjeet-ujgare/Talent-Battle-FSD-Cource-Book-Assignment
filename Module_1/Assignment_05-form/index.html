@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<style>
+    .ass-que {
+        text-align: center;
+        background-color: rgb(63, 14, 108);
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .lbl {
+        width: 130px;
+        display: inline-block;
+    }
+
+    .emp-form div {
+        margin-top: 10px;
+    }
+
+    .emp-form div input {}
+
+    .addr-container {
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .curr-addr {
+
+        width: 49%;
+    }
+
+    .per-addr {
+
+        width: 49%;
+    }
+
+    .vertical-line {
+        background-color: red;
+        width: 5px;
+    }
+
+    .btn button{
+        border: 2px solid black;
+        border-radius: 7px;
+        width: 200px;
+        height: 40px;
+        margin-left: 2%;
+        cursor: pointer;
+    }
+    .btn button:hover
+    {
+        background-color: coral;
+    }
+</style>
+
+<body>
+    <div class="ass-que">
+        <b>Assignment 5</b>
+        <h1>Create<u> employee registration</u> webpage using <mark><strong> HTML form</strong> </mark>objects.</h1>
+    </div>
+
+    <div class="container">
+        <h2>Emplyoee registration Form</h2>
+        <form class="emp-form" action="db.php" method="post">
+            <div>
+                <label class="lbl" for="name">Name </label>:<input type="text" name="name">
+            </div>
+
+            <div>
+                <label class="lbl" for="contact">Mobile Number </label>:<input type="text" name="contact">
+            </div>
+
+            <div>
+                <label class="lbl" for="gmail">Gmail Id</label>:<input type="text" name="gmail">
+            </div>
+
+            <div>
+                <label class="lbl" for="gender">Gender</label>:
+                <input type="radio" value="Male"><label for="Gender">Male</label>
+                <input type="radio" value="Female"><label for="gender">Female</lable>
+                    <input type="radio"><label for="Other">Other</label>
+            </div>
+
+
+            <div class="technical-skill">
+                <label class="lbl">Technical Skills</label>:
+                <input type="checkbox">Java
+                <input type="checkbox">Python
+                <input type="checkbox">php
+                <input type="checkbox">Other
+                <br>
+                <textarea style="width: 200px; margin-left: 135px;"
+                    placeholder="Descritption of your technical skills"></textarea>
+            </div>
+
+            <div>
+                <label class="lbl" for="gmail">Qulification </label>:
+                <select style="width: 170px;" name="qualification">
+                    <option value="bsc">BSc</option>
+                    <option value="bca">BCA</option>
+                    <option value="bcs">BCS</option>
+                    <option value="be">BE</option>
+                    <option value="btech">BTech</option>
+                    <option value="me">ME</option>
+                    <option value="mtech">MTech</option>
+                    <option value="mca">MCA</option>
+                    <option value="msc">MSc</option>
+                </select>
+            </div>
+            <div class="addr-container">
+                <div class="curr-addr">
+                    <h3>Current Address</h3>
+                    <label>addr line 1</label>:<input type="text"><br>
+                    <label>addr line 2</label>:<input type="text"><br>
+                    <label>State</label>:
+                    <combox>
+                        <select>
+                            <option>Maharashatra</option>
+                            <option>Gujarat</option>
+                            <option>Goa</option>
+                            <option>karnatka</option>
+                        </select>
+                    </combox><br>
+                    <textarea style="width: 300px;"></textarea>
+
+
+
+                </div>
+                <div class="vertical-line"> </div>
+                <div class="per-addr">
+                    <h3>Permant Address</h3>
+                    <label>Is your residencial addres is same as Permant addr :</label> <input type="radio">Yes <input
+                        type="radio">No<br>
+                    <label>addr line 1</label>:<input type="text"><br>
+                    <label>addr line 2</label>:<input type="text"><br>
+                    <label>State</label>:
+                    <combox>
+                        <select>
+                            <option>Maharashatra</option>
+                            <option>Gujarat</option>
+                            <option>Goa</option>
+                            <option>karnatka</option>
+                        </select>
+                    </combox><br>
+                    <textarea style="width: 300px;"></textarea>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Clear</button>
+                <button>Submit</button>
+                <button>Back</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
