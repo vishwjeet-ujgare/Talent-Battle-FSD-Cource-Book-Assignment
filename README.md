@@ -1,1 +1,1 @@
-# Talent-Battle-FSD-Cource-Book-Assignment
+# Talent-Battle-FSD-Course-Book-Assignment
